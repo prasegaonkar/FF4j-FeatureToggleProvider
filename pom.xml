@@ -3,11 +3,12 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>edu.mywork</groupId>
-	<artifactId>FeatureToggleProvider</artifactId>
+	<artifactId>FF4j-FeatureToggleProvider</artifactId>
+	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 
 	<properties>
-		<java.version>1.8</java.version>
+		<java.version>1.7</java.version>
 		<spring-boot.version>1.5.4.RELEASE</spring-boot.version>
 		<ff4j.version>1.6.5</ff4j.version>
 	</properties>
@@ -25,6 +26,11 @@
 	</dependencyManagement>
 
 	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
 		<dependency>
 			<groupId>org.ff4j</groupId>
 			<artifactId>ff4j-spring-boot-starter</artifactId>
